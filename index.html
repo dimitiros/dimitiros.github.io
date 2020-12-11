@@ -1,1 +1,49 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Sex education"/><link rel="apple-touch-icon" href="/logo192.png"/><link rel="manifest" href="/manifest.json"/><title>АРЗ</title><link href="/static/css/2.6c9b7e7c.chunk.css" rel="stylesheet"><link href="/static/css/main.a93834e0.chunk.css" rel="stylesheet"></head><body><div id="root"></div><script>!function(e){function r(r){for(var n,l,f=r[0],i=r[1],a=r[2],c=0,s=[];c<f.length;c++)l=f[c],Object.prototype.hasOwnProperty.call(o,l)&&o[l]&&s.push(o[l][0]),o[l]=0;for(n in i)Object.prototype.hasOwnProperty.call(i,n)&&(e[n]=i[n]);for(p&&p(r);s.length;)s.shift()();return u.push.apply(u,a||[]),t()}function t(){for(var e,r=0;r<u.length;r++){for(var t=u[r],n=!0,f=1;f<t.length;f++){var i=t[f];0!==o[i]&&(n=!1)}n&&(u.splice(r--,1),e=l(l.s=t[0]))}return e}var n={},o={1:0},u=[];function l(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=e,l.c=n,l.d=function(e,r,t){l.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},l.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},l.t=function(e,r){if(1&r&&(e=l(e)),8&r)return e;if(4&r&&"object"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(l.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var n in e)l.d(t,n,function(r){return e[r]}.bind(null,n));return t},l.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(r,"a",r),r},l.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},l.p="/";var f=this.webpackJsonpsexedu=this.webpackJsonpsexedu||[],i=f.push.bind(f);f.push=r,f=f.slice();for(var a=0;a<f.length;a++)r(f[a]);var p=i;t()}([])</script><script src="/static/js/2.a96a0033.chunk.js"></script><script src="/static/js/main.25a818c9.chunk.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/simplebar@5.3.0/dist/simplebar.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@5.3.0/dist/simplebar.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+  </head>
+  <body>
+    <div id="map"></div>
+    <div data-simplebar id="contentBar">
+      <div id="full" onclick="openCloseBar()">
+        <svg
+          width="50"
+          height="50"
+          viewBox="0 0 50 50"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M27.3943 15.2883C26.9756 14.8905 26.3117 14.9062 25.913 15.3243C25.5137 15.7425 25.5305 16.4043 25.9491 16.8026L33.9882 24.4089L13.048 24.4089C12.4695 24.4089 12 24.8773 12 25.4544C12 26.0315 12.4695 26.4999 13.048 26.4999L33.9547 26.4999L25.9491 34.1067C25.5299 34.505 25.5137 35.1668 25.913 35.585C26.1189 35.8004 26.395 35.9091 26.6717 35.9091C26.9316 35.9091 27.1915 35.8134 27.3943 35.6205L36.5374 26.9327C36.9335 26.538 37.1515 26.0132 37.1515 25.4544C37.1515 24.8956 36.9335 24.3708 36.5191 23.9583L27.3943 15.2883Z"
+            fill="white"
+          />
+        </svg>
+      </div>
+      <img id="image" />
+      <div class="info">
+        <h1 id="name">Select a marker</h1>
+        <p id="description"></p>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

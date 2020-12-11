@@ -1,0 +1,73 @@
+* {
+  font-family: Montserrat, serif;
+  font-size: 16px;
+  line-height: 26px;
+  transition: all 0.2s ease-in-out;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+#image {
+  width: 100%;
+}
+
+#full {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0 0 0 100%;
+  background: radial-gradient(
+    circle 70px at 100% 0,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  display: none;
+}
+
+#name {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 36px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+#map {
+  width: calc(100% - 400px);
+  height: 100%;
+  margin-left: 400px;
+}
+
+#contentBar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 400px;
+  background: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+}
+
+.fullBar {
+  width: 700px !important;
+}
+
+.info {
+  padding: 20px;
+}
+
+.rotated svg {
+  transform: rotateZ(180deg);
+}
