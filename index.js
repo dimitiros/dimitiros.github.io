@@ -128,7 +128,7 @@ DG.then(function () {
   for (let i in graffitiList) {
     DG.marker([graffitiList[i].longitude, graffitiList[i].latitude])
       .on("click", function () {
-        image.src = `images/${i}.png`;
+        image.innerHTML = `<img src="./images/${i}.png" />`;
         name.innerHTML = graffitiList[i].name;
         description.innerHTML = graffitiList[i].description;
         full.style.display = "flex"
